@@ -31,5 +31,10 @@
             tg.MainButton.enable()
         }
     }
+
+    Telegram.WebApp.onEvent("mainButtonClicked",function(){
+        tg.sendData("Сигма крипер вместе...")
+        tg.close()
+    })
 </script>
 </html>
